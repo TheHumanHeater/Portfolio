@@ -1,0 +1,114 @@
+#section1 {
+    width: 90%;
+    margin: 0 auto;
+} #baseBio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+} #baseBio .left {
+    width: 37%;
+} #baseBio .left img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+} #baseBio .right {
+    width: 57%;
+}
+
+#section2 {
+    width: 90%;
+    margin: 0 auto;
+} #silee-goose-prod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+} #silee-goose-prod .left {
+    width: 57%;
+} #silee-goose-prod .right {
+    width: 37%;
+} #silee-goose-prod .right img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+
+#section3 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+} .projectTitle {
+    font-size: xx-large;
+    text-align: center;
+} #projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} .group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+} .group .left {
+    width: 49%;
+} .group .right {
+    width: 49%;
+} .group .left img {
+    width: 100%;
+} .group1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+} .group1 .left {
+    width: 49%;
+} .group1 .right {
+    width: 49%;
+} .group1 .right img {
+    width: 100%;
+} 
+
+@media(max-width: 1000px) {
+    #baseBio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } #baseBio .left {
+        width: 90%
+    } #baseBio .right {
+        width: 100%
+    }
+    
+    #silee-goose-prod {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    } #silee-goose-prod .left {
+        width: 100%;
+    } #silee-goose-prod .right {
+        width: 90%;
+    }
+
+    .group {
+        flex-direction: column;
+    } .group .left {
+        width: 90%;
+    } .group .right {
+        width: 100%;
+    }
+    .group1 {
+        flex-direction: column-reverse;
+    } .group1 .left {
+        width: 100%;
+    } .group1 .right {
+        width: 90%;
+    }
+}

@@ -1,0 +1,173 @@
+#section1 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+} #section1DigitalArt {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+} .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+} .column img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 1%;
+} @media (max-width: 1000px) {
+    .column {
+        width: 90%;
+    }
+}
+
+#section2 {
+    width: 95%;
+    padding: 0;
+    margin: 3.5% auto;
+} #films-gallery {
+    width: 100%;
+    aspect-ratio: 4/1.425;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5%;
+} .featured-video {
+    width: 55%;
+} .featured-video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+} .all-videos {
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5%;
+} .video {
+    position: relative;
+} .video:hover .play-icon {
+    opacity: 1;
+    transition: opacity 300ms ease;
+} .play-icon {
+    opacity: 0;
+    transition: opacity 300ms ease;
+} .play-icon img {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 1435px) {
+    .featured-title {
+        font-size: 25px;
+        margin-top: 1%;
+    } 
+} @media (min-width: 1436px) {
+    .featured-title {
+        font-size: 35px;
+        margin-top: 1%;
+    }
+} @media (max-width: 1000px) {
+    #films-gallery {
+        flex-direction: column;
+        aspect-ratio: 1/1.5;
+    } .featured-video {
+        width: 100%;
+    } .all-videos {
+        width: 85%;
+        overflow-y: visible;
+    } .thumbnail {
+        width: 100%;
+    } .play-icon {
+        opacity: 1;
+    }
+}
+
+
+#section3 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+} #Games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5%;
+} #Games iframe {
+    margin: 0.5%;
+    opacity: 90%;
+    border-radius: 15px;
+}
+
+#section4 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+} #physical-art-gallery {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+} .physical-col {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+} .physical-col img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 1%;
+}
+ @media (max-width: 1000px) {
+     #physical-art-gallery {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     .physical-col {
+        width: 90%;
+    }
+}
+
+#section5 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3.5%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} .program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25%;
+    margin-bottom: 1.5%;
+} #section5 img {
+    width: 45%;
+    height: auto;
+}
+
+@media(max-width:1000px) {
+    #section1DigitalArt {
+        flex-direction: column;
+    }
+}
