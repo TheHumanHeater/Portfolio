@@ -28,7 +28,9 @@
     width: 40%;
     height: 100%;
     padding: 2%;
-    background: rgb(100, 100, 100);
+    background-image: url(../Media/Links/gradient.png);
+    background-size: cover;
+    background-position-y: 25%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: rgb(220, 220, 220);
