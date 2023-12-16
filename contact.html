@@ -40,12 +40,88 @@
         </div>
 
         <div id="section1">
-          <img src="Media/Coming Soon.png">
+          <h2 class="sectionTitle">CONTACT ME</h2>
+          <div id="contact-box">
+            <div class="left">
+              <h3>SEND A MESSAGE</h3>
+              <form>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" id="first" placeholder="John">
+                  </div>
+                  <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" id="last" placeholder="Doe">
+                  </div>
+                </div>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="johndoe@example.com">
+                  </div>
+                  <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" id="subject" placeholder="Art Commission">
+                  </div>
+                </div>
+                <div class="message-input">
+                  <label>Message</label>
+                  <textarea rows="7" id="message" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">SUBMIT</button>
+              </form>
+            </div>
+            <div class="right">
+              <h3>REACH ME</h3>
+              <h4>RUPERT FORD</h4>
+              <table>
+                <tr>
+                  <td class="contact-title">Email</td>
+                  <td>that.human.heater@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class="contact-title">Website</td>
+                  <td><a href="https://www.rupertford.com">rupertford.com</a></td>
+                </tr>
+                <tr>
+                  <td class="contact-title">IMDB</td>
+                  <td><a href="https://www.imdb.com/name/nm15594797/?ref_=nv_sr_srsg_3_tt_3_nm_5_q_rupert%2520ford">imdb.com</a></td>
+                </tr>
+                <tr>
+                  <td class="contact-title">Instagram</td>
+                  <td><a href="https://www.instagram.com/the_human_heater">instagram.com/the_human_heater &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+                </tr>
+              </table>
+              <h4>SILEE GOOSE PRODUCTIONS</h4>
+              <table>
+                <tr>
+                  <td class="contact-title">Email</td>
+                  <td>silee.goose.productions@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class="contact-title">Youtube</td>
+                  <td><a href="https://www.youtube.com/@sileegooseprod">youtube.com/@sileegooseprod</a></td>
+                </tr>
+                <tr>
+                  <td class="contact-title">Itch.io</td>
+                  <td><a href="https://silee-goose-productions.itch.io">silee-goose-productions.itch.io</a></td>
+                </tr>
+                <tr>
+                  <td class="contact-title">Instagram</td>
+                  <td><a href="https://www.instagram.com/silee.goose.productions">instagram.com/silee.goose.productions</a></td>
+                </tr>
+                <tr>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
+
         
         <footer id="footer">
           <div class="footerPanel">
-            <h4>SITE INFO</h4>
+            <h4 class="foot-title">SITE INFO</h4>
             <ul class="linkGroup">
               <li><a href="about.html">&copy; Rupert Ford - 2023</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -54,7 +130,7 @@
             </ul>
           </div>
           <div class="footerPanel">
-            <h4>PERSONAL LINKS</h4>
+            <h4 class="foot-title">PERSONAL LINKS</h4>
             <div id="footCol">
               <ul class="imageLinks">
                 <li><a href="https://www.instagram.com/the_human_heater"><img src="Media/Links/instagram.png" width="20px"></a></li>
@@ -71,7 +147,7 @@
             </div>
           </div>
           <div class="footerPanel">
-            <h4>PROFESSIONAL INFO</h4>
+            <h4 class="foot-title">PROFESSIONAL INFO</h4>
             <div id="footCol">
               <ul class="imageLinks">
                 <li><a href="https://silee-goose-productions.itch.io/ "><img src="Media/Links/itch.png" width="20px"></a></li>
@@ -88,7 +164,7 @@
             </div>
           </div>
           <div class="footerPanel">
-            <h4>LINKS</h4>
+            <h4 class="foot-title">LINKS</h4>
             <ul class="linkGroup">
               <li><a href="index.html">Home Page</a></li>
               <li><a href="about.html">About the Creator</a></li>
@@ -98,5 +174,23 @@
           </div>
         </footer>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+      function sendEmail(){
+        Email.send({
+            SecureToken : "d2975530-89f8-48aa-baa3-f5fa6e503d67",
+            To : "that.human.heater@gmail.com",
+            From : document.getElementById("email").value,
+            Subject : "New Portfolio Message From rupertford.com",
+            Body : "Name: " + document.getElementById("last").value + ", " + document.getElementById("first").value
+              + "<br> Email: " + document.getElementById("email").value
+              + "<br> Subject: " + document.getElementById("subject").value
+              + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert("Message Sent Successfully!")
+        );
+              }
+    </script>
   </body>
 </html>
