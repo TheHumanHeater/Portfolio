@@ -141,7 +141,7 @@ html, body {
       display: block;
       width: 11.5%;
     } .minilogo img {
-      width: 65px;
+      width: 75px;
     }
     .mininavName {
       display: flex;
@@ -207,7 +207,7 @@ html, body {
     font-size: 75px;
   } @media(max-width:715px) {
     .title h1 {
-      font-size: 90px;
+      font-size: 75px;
     } .sectionTitle {
       font-size: 54px;
     }
@@ -254,4 +254,6 @@ html, body {
     margin-right: 3%;
     margin-top: 0px;
     margin-bottom: 0px;
+  } .foot-title {
+    text-align: center;
   }
